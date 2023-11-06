@@ -1,17 +1,32 @@
 configVersion: 1.0.0
+management:
+  docChecksum: 21c25ca8a734b4fb704e98d966524ee0
+  docVersion: 1.0.0
+  speakeasyVersion: 1.114.0
+  generationVersion: 2.179.0
 generation:
-  comments:
-    disableComments: false
-    omitDescriptionIfSummaryPresent: false
-  baseServerURL: ""
-  flattenGlobalSecurity: true
+  comments: {}
   sdkClassName: Swagger-Petstore
-  singleTagPerOp: false
-  tagNamespacingDisabled: false
+  repoURL: https://github.com/speakeasy-sdks/new-workspace-sample-sdk.git
+features:
+  typescript:
+    core: 3.1.0
+    flattening: 2.81.1
+    globalServerURLs: 2.82.0
 typescript:
-  version: 0.0.1
+  version: 0.1.0
   author: new-workspace
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
+  imports:
+    option: openapi
+    paths:
+      callbacks: models/callbacks
+      errors: models/errors
+      operations: models/operations
+      shared: models/components
+      webhooks: models/webhooks
+  installationURL: https://github.com/speakeasy-sdks/new-workspace-sample-sdk
   maxMethodParams: 4
   packageName: Swagger-Petstore
+  repoSubDirectory: .
