@@ -1,5 +1,5 @@
 # Pets
-(*.pets*)
+(*pets*)
 
 ### Available Operations
 
@@ -21,7 +21,6 @@ import { SwaggerPetstore } from "Swagger-Petstore";
 
   const res = await sdk.pets.createPets();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -38,7 +37,11 @@ import { SwaggerPetstore } from "Swagger-Petstore";
 ### Response
 
 **Promise<[operations.CreatePetsResponse](../../models/operations/createpetsresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## listPets
 
@@ -55,7 +58,6 @@ import { ListPetsRequest } from "Swagger-Petstore/dist/models/operations";
 const limit: number = 21453;
 
   const res = await sdk.pets.listPets(limit);
-
 
   if (res.statusCode == 200) {
     // handle response
@@ -74,7 +76,11 @@ const limit: number = 21453;
 ### Response
 
 **Promise<[operations.ListPetsResponse](../../models/operations/listpetsresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## showPetById
 
@@ -91,7 +97,6 @@ import { ShowPetByIdRequest } from "Swagger-Petstore/dist/models/operations";
 const petId: string = "string";
 
   const res = await sdk.pets.showPetById(petId);
-
 
   if (res.statusCode == 200) {
     // handle response
@@ -110,4 +115,8 @@ const petId: string = "string";
 ### Response
 
 **Promise<[operations.ShowPetByIdResponse](../../models/operations/showpetbyidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

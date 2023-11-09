@@ -33,8 +33,8 @@ docs/models/operations/listpetsrequest.md
 docs/models/operations/listpetsresponse.md
 docs/models/operations/showpetbyidrequest.md
 docs/models/operations/showpetbyidresponse.md
-docs/models/shared/errort.md
-docs/models/shared/pet.md
+docs/models/components/errort.md
+docs/models/components/pet.md
 docs/sdks/swaggerpetstore/README.md
 docs/sdks/pets/README.md
 .gitattributes

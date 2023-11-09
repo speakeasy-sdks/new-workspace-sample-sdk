@@ -15,15 +15,15 @@ It has been generated successfully based on your OpenAPI spec. However, it is no
 - [ ] 🎁 Publish your SDK to package managers by [configuring automatic publishing](https://www.speakeasyapi.dev/docs/productionize-sdks/publish-sdks)
 - [ ] ✨ When ready to productionize, delete this section from the README
 <!-- Start SDK Installation -->
-# SDK Installation
+## SDK Installation
 
-## NPM
+### NPM
 
 ```bash
 npm add https://github.com/speakeasy-sdks/new-workspace-sample-sdk
 ```
 
-## Yarn
+### Yarn
 
 ```bash
 yarn add https://github.com/speakeasy-sdks/new-workspace-sample-sdk
@@ -32,8 +32,6 @@ yarn add https://github.com/speakeasy-sdks/new-workspace-sample-sdk
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { SwaggerPetstore } from "Swagger-Petstore";
 
@@ -51,10 +49,10 @@ import { SwaggerPetstore } from "Swagger-Petstore";
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-# Available Resources and Operations
+## Available Resources and Operations
 
 
-## [.pets](docs/sdks/pets/README.md)
+### [pets](docs/sdks/pets/README.md)
 
 * [createPets](docs/sdks/pets/README.md#createpets) - Create a pet
 * [listPets](docs/sdks/pets/README.md#listpets) - List all pets
@@ -63,16 +61,37 @@ import { SwaggerPetstore } from "Swagger-Petstore";
 
 <!-- Start Dev Containers -->
 
-
-
 <!-- End Dev Containers -->
 
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 
+## Example
+
+```typescript
+import { SwaggerPetstore } from "Swagger-Petstore";
+
+(async () => {
+    const sdk = new SwaggerPetstore();
+
+    let res;
+    try {
+        res = await sdk.pets.createPets();
+    } catch (e) {}
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+})();
+
+```
 <!-- End Error Handling -->
 
 <!-- Start Server Selection -->
@@ -87,7 +106,6 @@ You can override the default server globally by passing a server index to the `s
 | 0 | `http://petstore.swagger.io/v1` | None |
 
 For example:
-
 
 ```typescript
 import { SwaggerPetstore } from "Swagger-Petstore";
@@ -110,7 +128,6 @@ import { SwaggerPetstore } from "Swagger-Petstore";
 ## Override Server URL Per-Client
 
 The default server can also be overridden globally by passing a URL to the `serverURL: str` optional parameter when initializing the SDK client instance. For example:
-
 
 ```typescript
 import { SwaggerPetstore } from "Swagger-Petstore";
@@ -149,8 +166,6 @@ const httpClient = axios.create({
 
 const sdk = new SwaggerPetstore({defaultClient: httpClient});
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
