@@ -16,7 +16,7 @@ Create a pet
 ```typescript
 import { SwaggerPetstore } from "Swagger-Petstore";
 
-(async() => {
+async function run() {
   const sdk = new SwaggerPetstore();
 
   const res = await sdk.pets.createPets();
@@ -24,7 +24,9 @@ import { SwaggerPetstore } from "Swagger-Petstore";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -53,7 +55,7 @@ List all pets
 import { SwaggerPetstore } from "Swagger-Petstore";
 import { ListPetsRequest } from "Swagger-Petstore/dist/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new SwaggerPetstore();
 const limit: number = 21453;
 
@@ -62,7 +64,9 @@ const limit: number = 21453;
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -92,7 +96,7 @@ Info for a specific pet
 import { SwaggerPetstore } from "Swagger-Petstore";
 import { ShowPetByIdRequest } from "Swagger-Petstore/dist/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new SwaggerPetstore();
 const petId: string = "string";
 
@@ -101,7 +105,9 @@ const petId: string = "string";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
