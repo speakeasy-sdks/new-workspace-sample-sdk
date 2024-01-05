@@ -1,0 +1,58 @@
+lockVersion: 2.0.0
+id: 3d15c142-e1fe-4d31-969f-ce215f84257b
+management:
+  docChecksum: 21c25ca8a734b4fb704e98d966524ee0
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 0.2.1
+  configChecksum: d52eb07d2022a7d2aa046daab84c8e70
+  repoURL: https://github.com/speakeasy-sdks/new-workspace-sample-sdk.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/new-workspace-sample-sdk
+features:
+  typescript:
+    core: 3.4.1
+    flattening: 2.81.1
+    globalServerURLs: 2.82.1
+generatedFiles:
+  - src/sdk/pets.ts
+  - src/sdk/sdk.ts
+  - .eslintrc.yml
+  - jest.config.js
+  - package-lock.json
+  - package.json
+  - src/index.ts
+  - src/internal/utils/contenttype.ts
+  - src/internal/utils/headers.ts
+  - src/internal/utils/index.ts
+  - src/internal/utils/pathparams.ts
+  - src/internal/utils/queryparams.ts
+  - src/internal/utils/requestbody.ts
+  - src/internal/utils/retries.ts
+  - src/internal/utils/security.ts
+  - src/internal/utils/utils.ts
+  - src/sdk/index.ts
+  - src/models/errors/sdkerror.ts
+  - src/types/index.ts
+  - src/types/rfcdate.ts
+  - tsconfig.json
+  - src/models/operations/createpets.ts
+  - src/models/operations/listpets.ts
+  - src/models/operations/showpetbyid.ts
+  - src/models/components/error.ts
+  - src/models/components/pet.ts
+  - src/models/errors/index.ts
+  - src/models/operations/index.ts
+  - src/models/components/index.ts
+  - docs/models/operations/createpetsresponse.md
+  - docs/models/operations/listpetsrequest.md
+  - docs/models/operations/listpetsresponse.md
+  - docs/models/operations/showpetbyidrequest.md
+  - docs/models/operations/showpetbyidresponse.md
+  - docs/models/components/errort.md
+  - docs/models/components/pet.md
+  - docs/sdks/swaggerpetstore/README.md
+  - docs/sdks/pets/README.md
+  - USAGE.md
+  - .gitattributes
