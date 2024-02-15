@@ -4,15 +4,15 @@ management:
   docChecksum: 21c25ca8a734b4fb704e98d966524ee0
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 0.2.1
-  configChecksum: d52eb07d2022a7d2aa046daab84c8e70
+  generationVersion: 2.258.0
+  releaseVersion: 0.2.2
+  configChecksum: 03ce49d0c5724017142da8dd60d45436
   repoURL: https://github.com/speakeasy-sdks/new-workspace-sample-sdk.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/new-workspace-sample-sdk
 features:
   typescript:
-    core: 3.4.1
+    core: 3.4.7
     flattening: 2.81.1
     globalServerURLs: 2.82.1
 generatedFiles:
